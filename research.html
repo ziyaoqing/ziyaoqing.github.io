@@ -38,11 +38,14 @@
 
   <main class="wrapper" id="main">
     <section class="research-hero">
-      <h1>How an ageing body pushes the brain toward dementia, and where we might step in.</h1>
-      <p class="lede">I want to understand why the ageing brain becomes vulnerable to dementia. I am interested in how the
-        brain's immune, clearance and organelle systems wear down with age, how the rest of the body (the bone marrow in
-        particular) adds to that decline, and which of these steps could be treated with drugs. Since late 2025 I have
-        worked in four laboratories in Japan, each on a different part of the problem.</p>
+      <div class="hero-copy">
+        <h1>How an ageing body pushes the brain toward dementia, and where we might step in.</h1>
+        <p class="lede">I want to understand why the ageing brain becomes vulnerable to dementia. I am interested in how the
+          brain's immune, clearance and organelle systems wear down with age, how the rest of the body (the bone marrow in
+          particular) adds to that decline, and which of these steps could be treated with drugs. Since late 2025 I have
+          worked in four laboratories in Japan, each on a different part of the problem.</p>
+      </div>
+      <div class="glia-canvas" aria-hidden="true"><canvas id="glia" width="760" height="760"></canvas></div>
 
       <ul class="tiles" aria-label="Research themes">
         <li><a href="#bone-marrow"><span class="thumb"><img src="images/brain-bone-marrow-loop.svg" alt=""></span><span class="when">Sep 2026 – present</span><strong>Bone marrow and the brain</strong><span class="where">Tohoku University</span></a></li>
@@ -413,5 +416,42 @@
       <p class="credit">Figures on this page are credited in their captions. Micrograph in the header: <a href="https://commons.wikimedia.org/wiki/File:Microglia_and_neurons.jpg">&ldquo;Microglia and neurons&rdquo;</a> by GerryShaw / EnCor Biotechnology Inc., <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.</p>
     </div>
   </footer>
+
+  <script>
+  (function () {
+    var c = document.getElementById('glia'); if (!c || !c.getContext) return;
+    var ctx = c.getContext('2d'), W = c.width, H = c.height, cx = W / 2, cy = H / 2;
+    var seed = 20263; function rnd() { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; }
+    var segs = [];
+    function grow(x, y, ang, len, w, depth) {
+      var n = 2 + Math.floor(rnd() * 2);
+      for (var i = 0; i < n; i++) {
+        var a = ang + (rnd() - .5) * .5, l = len / n * (0.8 + rnd() * .5);
+        var nx = x + Math.cos(a) * l, ny = y + Math.sin(a) * l;
+        segs.push([x, y, nx, ny, w, depth]); x = nx; y = ny; ang = a;
+        if (depth < 4 && rnd() < .5) grow(x, y, ang + (rnd() < .5 ? -1 : 1) * (.55 + rnd() * .8), len * .6, w * .66, depth + 1);
+      }
+      if (depth < 4) grow(x, y, ang + (rnd() - .5) * 1.1, len * .6, w * .66, depth + 1);
+    }
+    var arms = 5; for (var k = 0; k < arms; k++) grow(cx, cy, k * Math.PI * 2 / arms + rnd() * .5, 155 + rnd() * 70, 5.5, 0);
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches, t0 = null, dur = 2600;
+    function frame(ts) {
+      if (t0 === null) t0 = ts; var p = reduce ? 1 : Math.min(1, (ts - t0) / dur);
+      ctx.clearRect(0, 0, W, H);
+      ctx.lineCap = 'round';
+      var upto = Math.floor(segs.length * p);
+      for (var i = 0; i < upto; i++) {
+        var s = segs[i]; ctx.strokeStyle = 'rgba(28,107,71,' + (0.95 - s[5] * .15) + ')'; ctx.lineWidth = Math.max(1.3, s[4]);
+        ctx.beginPath(); ctx.moveTo(s[0], s[1]); ctx.lineTo(s[2], s[3]); ctx.stroke();
+      }
+      ctx.fillStyle = '#1c6b47'; ctx.beginPath(); ctx.ellipse(cx, cy, 14, 11, .4, 0, Math.PI * 2); ctx.fill();
+      ctx.fillStyle = 'rgba(168,35,90,.9)'; ctx.beginPath(); ctx.arc(cx + 2, cy - 1, 4.5, 0, Math.PI * 2); ctx.fill();
+      if (p < 1) requestAnimationFrame(frame);
+    }
+    var started = false;
+    function start() { if (started) return; started = true; requestAnimationFrame(frame); }
+    if ('IntersectionObserver' in window) { new IntersectionObserver(function (e) { if (e[0].isIntersecting) start(); }).observe(c); } else start();
+  })();
+  </script>
 </body>
 </html>
