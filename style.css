@@ -18,6 +18,12 @@
   --neurite: #a3324a;
   --neurite-dark: #7c2236;
   --sepia: #7a5a36;
+  /* one colour per placement, used for blocks, tiles and markers */
+  --c-tohoku: #2c6a43;
+  --c-shimane: #b0761c;
+  --c-tokyo: #a3324a;
+  --c-tmu: #36557f;
+  --deep: #1f3327;
   --serif: "Newsreader", Georgia, "Times New Roman", serif;
   --sans: "Source Sans 3", "Source Sans Pro", Helvetica, Arial, sans-serif;
   --measure: 66ch;
@@ -353,3 +359,84 @@ footer .credit a { color: var(--muted); }
   details.refs { display: none; }
 }
 .band + .grid2 { border-top: 0 !important; padding-top: 0 !important; }
+
+/* ==========================================================
+   Colour blocks
+   Each placement owns one colour. It fills the date block at
+   the head of its section, tops its tile, marks its CV entry
+   and its stop on the route diagram, so colour always means
+   "which lab".
+   ========================================================== */
+.c-tohoku { --accent: var(--c-tohoku); }
+.c-shimane { --accent: var(--c-shimane); }
+.c-tokyo { --accent: var(--c-tokyo); }
+.c-tmu { --accent: var(--c-tmu); }
+
+/* placement header block */
+.theme[class*="c-"] { border-top: 3px solid var(--accent); }
+.theme[class*="c-"] .theme-meta {
+  background: var(--accent); color: rgba(255, 250, 240, .86); padding: 18px 18px 20px; border-radius: 0 0 3px 3px;
+  margin-top: -37px; padding-top: 22px; box-shadow: 0 14px 26px -18px rgba(40, 25, 10, .6);
+}
+.theme[class*="c-"] .theme-meta::before { background: rgba(255, 250, 240, .7); width: 28px; height: 2px; }
+.theme[class*="c-"] .theme-meta .when { color: #fffaf0; }
+.theme[class*="c-"] .pair .label:not(.label-thought) { color: var(--accent); }
+
+/* tiles: a colour bar under each image, coloured date */
+.tiles li[class*="c-"] .thumb { position: relative; }
+.tiles li[class*="c-"] .thumb::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 5px; background: var(--accent); }
+.tiles li[class*="c-"] .when { color: var(--accent); font-weight: 600; }
+
+/* CV entries */
+.cv-item[class*="c-"] .when { color: var(--accent); }
+.cv-item[class*="c-"] > div { border-left: 3px solid var(--accent); padding-left: 20px; margin-left: -23px; }
+
+/* research interests: tinted cards for the four interests */
+.interest-grid > div { background: rgba(255, 250, 241, .72); padding: 20px 22px 22px; border-radius: 3px; box-shadow: 0 0 0 1px rgba(90,62,30,.10); }
+.interest-grid > div:nth-child(1) { box-shadow: inset 3px 0 0 var(--c-tohoku), 0 0 0 1px rgba(90,62,30,.10); }
+.interest-grid > div:nth-child(2) { box-shadow: inset 3px 0 0 var(--c-tokyo), 0 0 0 1px rgba(90,62,30,.10); }
+.interest-grid > div:nth-child(3) { box-shadow: inset 3px 0 0 var(--c-shimane), 0 0 0 1px rgba(90,62,30,.10); }
+.interest-grid > div:nth-child(4) { box-shadow: inset 3px 0 0 var(--c-tmu), 0 0 0 1px rgba(90,62,30,.10); }
+
+/* synthesis: full-bleed deep green block */
+.thread { position: relative; margin-top: var(--s-section); padding: 88px 0 96px; border-top: 0; color: #efe6d4; }
+.thread::before { content: ""; position: absolute; inset: 0 calc(50% - 50vw); background: var(--deep); z-index: -1;
+  background-image: radial-gradient(ellipse 60% 80% at 85% 20%, rgba(44,106,67,.55), rgba(44,106,67,0) 70%), url("images/bg-cells.svg");
+  background-size: auto, 1600px auto; background-position: center, center top; }
+.thread-inner { margin-top: 0; }
+.thread .label-h { color: #fffaf0; position: static; }
+.thread .content p { max-width: var(--measure); font-size: 19px; line-height: 1.68; margin: 0; color: #efe6d4; }
+.route { list-style: none; margin: 0 0 40px; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); position: relative; }
+.route::before { content: ""; position: absolute; left: 7px; right: 7px; top: 7px; height: 2px; background: linear-gradient(90deg, var(--c-tohoku), var(--c-tokyo), var(--c-shimane), var(--c-tmu)); opacity: .9; }
+.route li { position: relative; padding-top: 28px; padding-right: 12px; }
+.route .dot { position: absolute; top: 0; left: 0; width: 16px; height: 16px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px var(--deep); }
+.route b { display: block; font-family: var(--serif); font-weight: 400; font-size: 19px; line-height: 1.25; color: #fffaf0; }
+.route span:not(.dot) { display: block; font-size: 13.5px; color: rgba(239,230,212,.65); margin-top: 3px; }
+.thread + * { margin-top: 0; }
+main:has(> .thread:last-child) + footer { margin-top: 0; }
+
+/* home contact card */
+.contact-card { background: var(--c-tohoku); color: #f6efe2; padding: 34px 38px 32px; border-radius: 3px; max-width: 760px;
+  background-image: radial-gradient(ellipse 70% 120% at 100% 0%, rgba(255,240,210,.14), rgba(255,240,210,0) 60%);
+  box-shadow: 0 18px 36px -22px rgba(30, 50, 35, .7); }
+.contact-card p { margin: 0; font-size: 19px; line-height: 1.55; max-width: 52ch; }
+.contact-links { margin-top: 20px !important; display: flex; gap: 12px; flex-wrap: wrap; }
+.contact-links a { color: var(--c-tohoku); background: #fbf4e6; text-decoration: none; padding: 8px 18px; border-radius: 999px; font-size: 15.5px; font-weight: 600; }
+.contact-links a:hover { background: #fff; color: var(--glia-dark); }
+
+/* dark footer */
+footer { background: #2a2017; color: rgba(243, 233, 216, .72); border-top: 0; }
+footer a { color: #e9d9b8; text-decoration-color: rgba(233, 217, 184, .35); }
+footer a:hover { color: #fff; }
+footer .credit { color: rgba(243, 233, 216, .5); }
+footer .credit a { color: rgba(243, 233, 216, .72); }
+
+@media (max-width: 760px) {
+  .theme[class*="c-"] .theme-meta { margin-top: -27px; margin-bottom: 14px; }
+  .route { grid-template-columns: 1fr 1fr; row-gap: 24px; }
+  .route::before { display: none; }
+  .thread { padding: 64px 0 72px; }
+  .contact-card { padding: 26px 24px; }
+  .cv-item[class*="c-"] > div { margin-left: 0; padding-left: 16px; }
+}
+main:has(> .thread:last-child) { padding-bottom: 0; }
