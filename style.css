@@ -305,7 +305,7 @@ footer .credit a { color: var(--muted); }
   .masthead .wrapper { min-height: 0; padding-top: 14px; padding-bottom: 0; gap: 12px; }
   .site-name { font-size: 21px; }
   .site-description { font-size: 13.5px; }
-  nav { width: 100%; overflow-x: auto; gap: 22px; }
+  nav { width: 100%; overflow-x: auto; overflow-y: hidden; gap: 22px; }
   nav a { font-size: 15.5px; padding: 10px 0 12px; }
   main.wrapper { padding-top: 44px; }
   html { scroll-padding-top: 145px; }
@@ -315,6 +315,7 @@ footer .credit a { color: var(--muted); }
   .hero-sub { font-size: 17px; }
   .hero-img { aspect-ratio: 4 / 3; border-radius: 3px; }
   .hero-figure { max-width: 520px; }
+  .glia-canvas { display: none; }
   .hero-affiliation { margin-top: 22px; }
   .hero-figure figcaption { margin-top: 10px; }
   .hero + main.wrapper { padding-top: 48px; }
