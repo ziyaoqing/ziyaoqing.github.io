@@ -12,327 +12,49 @@
   <meta property="og:url" content="https://ziyaoqing.github.io/research.html">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://ziyaoqing.github.io/research.html">
-  <link rel="icon" type="image/svg+xml" href="images/zq-mark.svg">
+  <link rel="icon" type="image/svg+xml" href="images/microglia-glyph.svg">
+  <link rel="alternate icon" type="image/png" href="images/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Source+Sans+3:wght@400;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
-  <link rel="stylesheet" href="style.css?v=ce4f72eaa4ec">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Source+Sans+3:wght@400;600&display=swap">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="masthead"><div class="wrapper"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">ZQ</span>Ziyao Qing</a><nav aria-label="Main"><a href="index.html">Home</a><a href="research.html" class="active" aria-current="page">Research</a><a href="cv.html">CV</a><a href="publications.html">Publications</a></nav></div></header>
+  <header class="masthead">
+    <div class="wrapper">
+      <a href="index.html" class="site-avatar" aria-hidden="true" tabindex="-1"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#2c6a43" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M32 32 L46 20 M46 20 L53 17 M46 20 L50 12"/><path d="M32 32 L20 18 M20 18 L12 16 M20 18 L18 9"/><path d="M32 32 L15 36 M15 36 L8 32 M15 36 L9 42"/><path d="M32 32 L27 49 M27 49 L20 55 M27 49 L31 57"/><path d="M32 32 L48 42 M48 42 L56 41 M48 42 L53 50"/><ellipse cx="32" cy="32" rx="5.2" ry="4.4" fill="#2c6a43" stroke="none"/><circle cx="33" cy="31.5" r="1.6" fill="#a3324a" stroke="none"/></svg></a>
+      <div class="site-info">
+        <a href="index.html" class="site-name">Ziyao Qing</a>
+        <p class="site-description">Pharmaceutical Science &amp; Dementia Research</p>
+      </div>
+      <nav aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="research.html" class="active" aria-current="page">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="cv.html">CV</a>
+      </nav>
+    </div>
+  </header>
 
   <main class="wrapper" id="main">
     <section class="research-hero">
-      <p class="eyebrow">Research / Experience &amp; interests</p>
       <div class="hero-copy">
-        <h1>How do brain and body shape dementia?</h1>
-        <p class="lede">My interests connect dementia, neuroinflammation and drug discovery. Since late 2025 I have worked in four laboratories in Japan, studying different aspects of brain ageing and neurodegeneration.</p>
+        <h1>How an ageing body pushes the brain toward dementia, and where we might step in.</h1>
+        <p class="lede">I want to understand why the ageing brain becomes vulnerable to dementia. I am interested in how the
+          brain's immune, clearance and organelle systems wear down with age, how the rest of the body (the bone marrow in
+          particular) adds to that decline, and which of these steps could be treated with drugs. Since late 2025 I have
+          worked in four laboratories in Japan, each on a different part of the problem.</p>
       </div>
+      <div class="glia-canvas" aria-hidden="true"><canvas id="glia" width="760" height="760"></canvas></div>
 
       <ul class="tiles" aria-label="Research themes">
-        <li class="c-tohoku"><a href="#bone-marrow"><span class="thumb"><img loading="lazy" decoding="async" src="images/brain-bone-marrow-loop.svg?v=20261025" alt=""></span><span class="when">Sep 2026 – present</span><strong>Bone marrow and the brain</strong><span class="where">Tohoku University</span></a></li>
-        <li class="c-shimane"><a href="#organelle-contacts"><span class="thumb photo"><img loading="lazy" decoding="async" src="images/nagoya-sigma1r-atad3a-micrograph.webp" alt=""></span><span class="when">Jun – Aug 2026</span><strong>ER–mitochondria contacts</strong><span class="where">Shimane University</span></a></li>
-        <li class="c-tokyo"><a href="#senoinflammation"><span class="thumb"><img loading="lazy" decoding="async" src="images/higuchi-moonshot-senoinflammation.webp" alt=""></span><span class="when">Jan – Feb 2026</span><strong>Ageing and senoinflammation</strong><span class="where">Institute of Science Tokyo</span></a></li>
-        <li class="c-tmu"><a href="#mark4"><span class="thumb"><img loading="lazy" decoding="async" src="images/ando-febs-2026-graphical-abstract.webp" alt=""></span><span class="when">Dec 2025 – Jan 2026</span><strong>MARK4 and early tau</strong><span class="where">Tokyo Metropolitan University</span></a></li>
+        <li class="c-tohoku"><a href="#bone-marrow"><span class="thumb"><img src="images/brain-bone-marrow-loop.svg" alt=""></span><span class="when">Sep 2026 – present</span><strong>Bone marrow and the brain</strong><span class="where">Tohoku University</span></a></li>
+        <li class="c-shimane"><a href="#organelle-contacts"><span class="thumb photo"><img src="images/nagoya-sigma1r-atad3a-micrograph.webp" alt=""></span><span class="when">Jun – Aug 2026</span><strong>ER–mitochondria contacts</strong><span class="where">Shimane University</span></a></li>
+        <li class="c-tokyo"><a href="#senoinflammation"><span class="thumb"><img src="images/higuchi-moonshot-senoinflammation.webp" alt=""></span><span class="when">Jan – Feb 2026</span><strong>Ageing and senoinflammation</strong><span class="where">Institute of Science Tokyo</span></a></li>
+        <li class="c-tmu"><a href="#mark4"><span class="thumb"><img src="images/ando-febs-2026-graphical-abstract.webp" alt=""></span><span class="when">Dec 2025 – Jan 2026</span><strong>MARK4 and early tau</strong><span class="where">Tokyo Metropolitan University</span></a></li>
       </ul>
     </section>
-
-
-    <p class="note research-note">The grants and publications listed under each placement belong to the host laboratories. I list them as
-        background to each theme; they are not my own awards or papers, and some appeared after my placement ended.</p>
-
-    <article class="theme c-tohoku" id="bone-marrow">
-      <header class="theme-head">
-        <p class="theme-meta"><span class="when">Sep 2026 – present</span>Tohoku University<br>Sendai, Japan</p>
-        <div class="theme-title">
-          <h2>Bone marrow, blood and the ageing brain</h2>
-          <p class="theme-topic"><strong>Haematopoietic stem cells and the origins of dementia</strong><br>
-        Laboratory of Pharmacology, Graduate School of Pharmaceutical Sciences. Supervisor: Assoc. Prof. Nariko Arimura</p>
-        </div>
-      </header>
-      <div class="pair my-placement">
-        <p class="label">My placement</p>
-        <div class="text"><p>I joined this project in September 2026 as an undergraduate research
-            assistant.</p></div>
-      </div>
-
-      <details class="research-context">
-        <summary>Laboratory background &amp; further reading</summary>
-        <div class="context-grid">
-      <div class="pair">
-        <p class="label">In the host lab</p>
-        <div class="text"><p>Assoc. Prof. Arimura’s laboratory studies how haematopoietic (blood-forming) stem cells and blood-derived signals relate to brain function. This placement connects my interest in neurodegeneration with the question of how changes outside the brain may influence cognition.</p></div>
-      </div>
-        <figure class="fig side">
-          <div class="plate"><img loading="lazy" decoding="async" src="images/tohoku2025-tau-microtubule.webp" width="690" height="473" alt="Diagram: in a healthy brain tau stabilises microtubules; in the Alzheimer's brain tau detaches, forms tangles and the microtubules disintegrate, damaging neurons. A question mark marks the unknown trigger."></div>
-          <figcaption><b>The unknown trigger.</b> In Alzheimer's disease tau detaches from microtubules and forms tangles.
-            What starts this is the question the lab works back from.
-            <span class="credit">Image: Tohoku University (2025).</span></figcaption>
-        </figure>
-      <div class="pair">
-        <p class="label label-thought">Questions &amp; reading</p>
-        <div class="text thoughts"><p>Could a persistent change in the blood-forming system alter synaptic function in an otherwise normal brain? I want to distinguish peripheral output, the signals that reach the brain, and the brain’s response. These are research questions, and evidence for one link does not establish the whole causal chain.</p></div>
-      </div>
-      <figure class="fig side">
-        <div class="plate"><img loading="lazy" decoding="async" src="images/brain-bone-marrow-loop.svg?v=20261025" width="640" height="360" alt="Conceptual questions linking bone marrow, circulating cells and signals, and brain function. Arrows indicate questions to test, not proven mechanisms."></div>
-        <figcaption><b>From peripheral change to brain response.</b> A framework for questions I want to test.
-          <span class="credit">Conceptual illustration for this site; not a summary of established mechanisms.</span></figcaption>
-      </figure>
-      <p class="label">Sources</p>
-      <details class="refs wide">
-        <summary>Host-lab funding and selected publications</summary>
-        <div class="refs-body">
-          <p><b>Host-lab funding</b> (PI: Assoc. Prof. Arimura):
-        JSPS KAKENHI Scientific Research (B) <a href="https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-24K01943/">24K01943</a>,
-        2024–2027, Elucidating the haematopoietic-stem-cell basis of dementia onset;
-        AMED Brain/MINDS 2.0 <a href="https://brainminds.jp/research/2141">5S-02</a>, FY2024–2026, Analysis of plasma
-        components that cause dementia and development of transplantation therapy.</p>
-          <p><b>Selected lab publications:</b>
-        Nakazawa S, … Arimura N. <em>Nihon Yakurigaku Zasshi</em> 2025 (review: blood cells and plasma components in dementia)
-        <a href="https://doi.org/10.1254/fpj.24115">[DOI]</a>;
-        Dewa K, Arimura N, … Hoshino M. <em>Nat Commun</em> 2024 (neuronal DSCAM and astrocytic GLAST in synapse formation)
-        <a href="https://doi.org/10.1038/s41467-023-44579-z">[DOI]</a>.</p>
-        </div>
-      </details>
-        </div>
-      </details>
-    </article>
-
-    <article class="theme c-shimane" id="organelle-contacts">
-      <header class="theme-head">
-        <p class="theme-meta"><span class="when">Jun – Aug 2026</span>Shimane University<br>Izumo, Japan</p>
-        <div class="theme-title">
-          <h2>ER–mitochondria contacts in neurodegeneration</h2>
-          <p class="theme-topic"><strong>Organelle-contact abnormalities in neurodegenerative disease</strong><br>
-        Department of Life Science (Chemistry), Faculty of Medicine. Supervisor: Assoc. Prof. Seiji Watanabe</p>
-        </div>
-      </header>
-      <div class="pair my-placement">
-        <p class="label">My placement</p>
-        <div class="text"><p>My project, <em>Investigation of novel organelle-contact abnormalities
-            using neurodegenerative disease models</em>, compared MAM formation, location and related proteins between
-            disease models and controls, using the lab's cell systems and stored samples, and related these changes to
-            mitochondrial shape, proteostatic stress and neuroinflammation.</p></div>
-      </div>
-
-      <details class="research-context">
-        <summary>Laboratory background &amp; further reading</summary>
-        <div class="context-grid">
-      <div class="pair">
-        <p class="label">In the host lab</p>
-        <div class="text"><p>Protein build-up, failing mitochondria and inflammation are usually
-            studied separately. One place where they meet is the mitochondria-associated membrane (MAM), the contact site
-            between the endoplasmic reticulum and mitochondria. The MAM handles Ca<sup>2+</sup> transfer, lipid synthesis,
-            mitochondrial division, autophagy and responses to proteostatic stress. Assoc. Prof. Watanabe and colleagues have
-            shown that MAM disruption is common to several ALS-causing genes, and that losing the MAM impairs the
-            TBK1-mediated response to proteostatic stress. The lab now asks which parts of the MAM are damaged in disease,
-            whether microglia have MAM defects too, and whether restoring the MAM can reduce neuroinflammation.</p></div>
-      </div>
-        <figure class="fig side">
-          <div class="plate"><img loading="lazy" decoding="async" class="tall" src="images/watanabe-bioessays-2025-fig1.jpg" width="602" height="696" alt="Schematic from Watanabe and Yamanaka 2025 comparing MAM deficit in ALS, healthy contacts, and MAM excess in Alzheimer's disease."></div>
-          <figcaption><b>Too little or too much contact.</b> The ER–mitochondria contact is weakened in ALS but
-            over-formed in Alzheimer's disease.
-            <span class="credit">Figure 1 from <a href="https://doi.org/10.1002/bies.70016">Watanabe &amp; Yamanaka,
-            <em>BioEssays</em> 2025</a>, reproduced unchanged under
-            <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>.</span></figcaption>
-        </figure>
-      <div class="pair">
-        <p class="label label-thought">Questions &amp; reading</p>
-        <div class="text thoughts"><p>In August 2026, researchers described "mitochondrial plaques": large clusters of mitochondria-filled dystrophic
-            neurites next to amyloid plaques, in mouse models and in Alzheimer's brain
-            (<a href="https://www.alzforum.org/news/research-news/meet-mitochondrial-plaque-new-alzheimers-pathology">Alzforum, Aug 2026</a>).
-            Ralph Nixon read them as one sign of a wider collapse of autophagy in vulnerable neurons. I keep coming at this
-            from the other side. The MAM is one of the places where mitochondria are divided, checked and handed over to
-            autophagy, so could failure at the contact site come before the pile-up? The idea is not new. TDP-43 was shown to
-            loosen the ER–mitochondria link back in 2014
-            (<a href="https://www.alzforum.org/news/research-news/no-mam-als-protein-breaks-mitochondria-endoplasmic-reticulum-bond">Alzforum, Jun 2014</a>),
-            but only now are there good tools to watch these contacts in tissue. I find it useful to ask not only which
-            organelle breaks, but where two organelles stop working together.</p></div>
-      </div>
-        <figure class="fig side">
-          <div class="plate dark"><img loading="lazy" decoding="async" src="images/nagoya-sigma1r-atad3a-micrograph.webp" width="700" height="700" alt="Fluorescence micrograph of a cultured cell: sigma-1 receptor in green spread through the ER, ATAD3A in red on threadlike mitochondria, nucleus in blue."></div>
-          <figcaption><b>Seeing the contact.</b> The MAM protein σ1R (green) and the mitochondrial protein ATAD3A (red),
-            both linked to ALS. Loss of σ1R disturbs mitochondrial shape through ATAD3A.
-            <span class="credit">Image: Yamanaka Laboratory, Nagoya University, via
-            <a href="https://eurekalert.org/multimedia/983415">EurekAlert</a>. Study:
-            <a href="https://doi.org/10.1016/j.nbd.2023.106031">Watanabe et al., <em>Neurobiol Dis</em> 2023</a>.</span></figcaption>
-        </figure>
-      <p class="label">Sources</p>
-      <details class="refs wide">
-        <summary>Host-lab funding and selected publications</summary>
-        <div class="refs-body">
-          <p><b>Host-lab funding</b> (PI: Assoc. Prof. Watanabe):
-        JST FOREST Program (2024 cohort), New therapeutic strategies for neurodegenerative diseases from ER–mitochondria
-        crosstalk; JSPS KAKENHI Scientific Research (B)
-        <a href="https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-26K02327/">26K02327</a>, 2026–2031, Molecular basis of
-        neuroinflammation through organelle crosstalk and development of new control strategies. Foundation support
-        acknowledged in the lab's 2025 MAM review: Takeda Science Foundation, Mochida Memorial Foundation for Medical and
-        Pharmaceutical Research, Kowa Life Science Foundation, Novartis Foundation.</p>
-          <p><b>Selected lab publications:</b>
-        Watanabe S, … Yamanaka K. <em>PNAS</em> 2023 (MAM collapse impairs TBK1-mediated proteostatic stress response in ALS)
-        <a href="https://doi.org/10.1073/pnas.2315347120">[DOI]</a>;
-        Watanabe S, … Yamanaka K. <em>Neurobiol Dis</em> 2023 (σ1R and ATAD3A in mitochondrial morphology in ALS)
-        <a href="https://doi.org/10.1016/j.nbd.2023.106031">[DOI]</a>;
-        Watanabe S, Yamanaka K. <em>BioEssays</em> 2025 (review: ER–mitochondria contacts and proteostatic stress in
-        neurodegeneration) <a href="https://doi.org/10.1002/bies.70016">[DOI]</a>.</p>
-        </div>
-      </details>
-        </div>
-      </details>
-    </article>
-
-    <article class="theme c-tokyo" id="senoinflammation">
-      <header class="theme-head">
-        <p class="theme-meta"><span class="when">Jan – Feb 2026</span>Institute of Science Tokyo<br>Tokyo, Japan</p>
-        <div class="theme-title">
-          <h2>Ageing, senescent glia and inflammation</h2>
-          <p class="theme-topic"><strong>Ageing-induced senoinflammation in dementia</strong><br>
-        Department of Pharmacology, Graduate School of Medical and Dental Sciences. Supervisor: Prof. Tomoyuki Furuyashiki</p>
-        </div>
-      </header>
-      <div class="pair my-placement">
-        <p class="label">My placement</p>
-        <div class="text"><p>I trained in the lab on this theme in January and February 2026.</p></div>
-      </div>
-
-      <details class="research-context">
-        <summary>Laboratory background &amp; further reading</summary>
-        <div class="context-grid">
-      <div class="pair">
-        <p class="label">In the host lab</p>
-        <div class="text"><p>Age is the biggest risk factor for dementia. Part of the reason may
-            be senescent cells, which stop dividing but do not die, and keep releasing inflammatory signals
-            ("senoinflammation") into the tissue around them. Prof. Furuyashiki's laboratory studies how ageing and chronic
-            stress change brain circuits through inflammation in the brain and the rest of the body. The lab has shown that
-            long-term stress mobilises cells from the bone marrow into the brain, where they contribute to behavioural
-            change. This is the same body-to-brain route I now work on at Tohoku. More recently, the lab found that oxidative
-            stress in synaptic mitochondria of the prefrontal cortex helps explain why some aged mice lose cognitive
-            flexibility and others don't. The lab takes part in two Moonshot Goal 7 projects on preventing and controlling
-            dementia.</p></div>
-      </div>
-        <figure class="fig side">
-          <div class="plate"><img loading="lazy" decoding="async" src="images/furuyashiki-agingcell-2026-graphical-abstract.webp" width="331" height="224" alt="Graphical abstract: aged mice vary in cognitive flexibility; low performers have more synaptic mitochondrial proteins; MitoQ improves flexibility."></div>
-          <figcaption><b>Mitochondria at the ageing synapse.</b> Aged mice vary in cognitive flexibility. Poor performers
-            carry more synaptic mitochondrial proteins in the prefrontal cortex, and the antioxidant MitoQ improves
-            flexibility.
-            <span class="credit">Graphical abstract from <a href="https://doi.org/10.1111/acel.70716">Yamada et al.,
-            <em>Aging Cell</em> 2026</a>, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</span></figcaption>
-        </figure>
-      <div class="pair">
-        <p class="label label-thought">Questions &amp; reading</p>
-        <div class="text thoughts"><p>Senolytics, drugs that clear senescent cells, have been tried in small Alzheimer's studies. Dasatinib reached the
-            cerebrospinal fluid, but biomarkers and cognition did not change over 12 weeks; a larger placebo-controlled trial
-            is expected to run into 2027 (<a href="https://www.alzforum.org/therapeutics/dasatinib-quercetin">Alzforum
-            therapeutics database</a>). Meanwhile, Li Gan's group found that senescent microglia in a mouse model of ageing
-            release one factor, DLK1, that disrupts myelin and neuronal signalling
-            (<a href="https://www.alzforum.org/news/research-news/senescent-microglia-release-protein-disrupts-myelin-riles-neurons">Alzforum, Aug 2026</a>).
-            Rahul Nagvekar noted that myelin breakdown has long been linked to neurodegeneration but rarely targeted, and
-            this study names a candidate driver. It points to a different strategy: rather than removing senescent cells,
-            block the specific factors that do the damage. It also explains why the Moonshot project puts so much weight on
-            imaging senoinflammation. A drug target is only useful if we can see whether we are hitting it.</p></div>
-      </div>
-        <figure class="fig side">
-          <div class="plate"><img loading="lazy" decoding="async" src="images/higuchi-moonshot-senoinflammation.webp" width="1000" height="756" alt="Cycle diagram: deposits of tau, TDP-43, α-synuclein and amyloid-β drive cellular senescence of glia, which leads to neuroinflammation as glia turn from protectors to destroyers, feeding back on protein aggregation."></div>
-          <figcaption><b>A vicious cycle.</b> Protein aggregates push glia into senescence; senescent glia drive
-            inflammation and turn from protectors into destroyers, which speeds up aggregation.
-            <span class="credit">Image: <a href="https://anc.qst.go.jp/moonshot-7/en/about/">Moonshot Goal 7 Higuchi
-            Project</a>, QST.</span></figcaption>
-        </figure>
-      <p class="label">Sources</p>
-      <details class="refs wide">
-        <summary>Host-lab funding and selected publications</summary>
-        <div class="refs-body">
-          <p><b>Host-lab projects:</b>
-        AMED Moonshot Goal 7, Higuchi Project (PM: Dr Makoto Higuchi, QST; Prof. Furuyashiki is a project member), Early
-        detection and control of dementia pathogenesis based on the concept of glial pathology developing into
-        senoinflammation; AMED Moonshot Goal 7, <a href="https://ms7isa.med.kyoto-u.ac.jp/member/%e5%8f%a4%e5%b1%8b%e6%95%b7-%e6%99%ba%e4%b9%8b/">Isa
-        Project</a> (Prof. Furuyashiki is a project member), Brain reserve functions that support resilience against
-        dementia, and ways to strengthen them; AMED Brain/MINDS 2.0 <a href="https://brainminds.jp/research/4561">3B-05-R7</a>,
-        FY2025–2029 (PI: Prof. Furuyashiki), Whole-brain neural-circuit changes originating from inflammation in psychiatric
-        and neurological disorders.</p>
-          <p><b>Selected lab publications:</b>
-        Yamada R, …, Furuyashiki T. <em>Aging Cell</em> 2026 (synaptic mitochondrial oxidative stress and age-related cognitive
-        inflexibility) <a href="https://doi.org/10.1111/acel.70716">[DOI]</a>;
-        Yamada R, …, Furuyashiki T. <em>J Pharmacol Sci</em> 2025 (ageing-associated behavioural changes in C57BL/6 substrains)
-        <a href="https://doi.org/10.1016/j.jphs.2025.01.002">[DOI]</a>;
-        Motooka Y, …, Furuyashiki T. <em>J Pharmacol Sci</em> 2025 (COX-1 and TLR4 in stress-induced neuroinflammation, PET)
-        <a href="https://doi.org/10.1016/j.jphs.2025.01.006">[DOI]</a>.</p>
-        </div>
-      </details>
-        </div>
-      </details>
-    </article>
-
-    <article class="theme c-tmu" id="mark4">
-      <header class="theme-head">
-        <p class="theme-meta"><span class="when">Dec 2025 – Jan 2026</span>Tokyo Metropolitan University<br>Tokyo, Japan</p>
-        <div class="theme-title">
-          <h2>MARK4 and early tau toxicity</h2>
-          <p class="theme-topic"><strong>The role of MARK4 in neuroinflammation</strong><br>
-        Laboratory of Molecular Neuroscience, Graduate School of Science. Supervisor: Prof. Kanae Ando</p>
-        </div>
-      </header>
-      <div class="pair my-placement">
-        <p class="label">My placement</p>
-        <div class="text"><p>I studied the role of MARK4 in neuroinflammation, supported by an
-            Undergraduate Research Scholarship from Tokyo Metropolitan University.</p></div>
-      </div>
-
-      <details class="research-context">
-        <summary>Laboratory background &amp; further reading</summary>
-        <div class="context-grid">
-      <div class="pair">
-        <p class="label">In the host lab</p>
-        <div class="text"><p>Tau becomes toxic well before it forms tangles, and the enzymes that
-            modify it early are possible drug targets. Prof. Ando's laboratory studies MARK4, a kinase linked to Alzheimer's
-            disease by both genetics and pathology. The lab has shown that deleting <em>Mark4</em> in a tauopathy mouse
-            model reduces pathological tau, neurodegeneration and astrogliosis, and improves memory and survival. It has
-            also developed a cell-penetrating peptide that blocks MARK4 and reduces tau toxicity. Separately, the lab
-            studies how neuronal and glial metabolism shape brain ageing: in a fly model of tau toxicity, raising glucose
-            uptake in glia reduced neuroinflammation and protected neurons.</p></div>
-      </div>
-        <figure class="fig side">
-          <div class="plate"><img loading="lazy" decoding="async" src="images/ando-febs-2026-graphical-abstract.webp" width="238" height="281" alt="Graphical abstract: oxidative stress plus excess MARK4 activity lowers TIA1 oxidation, increases stress-granule formation, and leads to tau accumulation and neurodegeneration."></div>
-          <figcaption><b>MARK4 under oxidative stress.</b> Excess MARK4 activity lowers TIA1 oxidation and increases
-            stress-granule formation, leading to tau accumulation and neurodegeneration.
-            <span class="credit">Graphical abstract from <a href="https://doi.org/10.1002/2211-5463.70338">Nakajima et al.,
-            <em>FEBS Open Bio</em> 2026</a>, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</span></figcaption>
-        </figure>
-      <div class="pair">
-        <p class="label label-thought">Questions &amp; reading</p>
-        <div class="text thoughts"><p>In 2025, Thomas Karikari's group characterised the soluble tau assemblies that form before tangles. Their core is
-          phosphorylated at serines 262 and 356, and these species in cerebrospinal fluid tracked tangle load and cognitive
-          decline (<a href="https://www.alzforum.org/news/research-news/new-biomarkers-catch-tau-it-tangles">Alzforum, Feb 2025</a>).
-          These are the sites that MARK-family kinases phosphorylate. The Ando lab's fly work complicates the picture,
-          though: MARK1, 2 and 4 all increased phosphorylation at these sites, but only MARK4 made tau accumulate, so the
-          sites alone do not explain toxicity. In 2016, blocking Nuak1, a related kinase that acts at Ser356, also reduced
-          tau pathology in mice, and Bingwei Lu suggested this kinase family as a new way into the tauopathies
-          (<a href="https://www.alzforum.org/news/research-news/new-target-tauopathies-blocking-nuak1-could-reduce-tau-build">Alzforum, Oct 2016</a>).
-          I would like to know whether the same early tau species could work both as an early warning and as a readout
-          for MARK4-targeted drugs.</p></div>
-      </div>
-      <p class="label">Sources</p>
-      <details class="refs wide">
-        <summary>Host-lab funding and selected publications</summary>
-        <div class="refs-body">
-          <p><b>Host-lab funding</b> (PI: Prof. Ando):
-        AMED Brain/MINDS 2.0 <a href="https://brainminds.jp/research/2149">5S-03</a>, FY2024–2026, Development of therapeutic
-        seeds for dementias with tau pathology; JSPS KAKENHI Scientific Research (B)
-        <a href="https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-24K02860/">24K02860</a>, 2024–2028, Molecular and circuit
-        basis by which neuronal glucose metabolism regulates organismal ageing; Takeda Science Foundation.</p>
-          <p><b>Selected lab publications:</b>
-        Sultanakhmetov G, … Ando K. <em>Brain Commun</em> 2024 (<em>Mark4</em> ablation attenuates tauopathy phenotypes)
-        <a href="https://doi.org/10.1093/braincomms/fcae136">[DOI]</a>;
-        Oba T, … Ando K. <em>Neurobiol Dis</em> 2023 (allosteric peptide inhibitor of MARK4)
-        <a href="https://doi.org/10.1016/j.nbd.2023.106334">[DOI]</a>;
-        Nakajima S, … Ando K. <em>FEBS Open Bio</em> 2026 (MARK4, stress granules and tau accumulation)
-        <a href="https://doi.org/10.1002/2211-5463.70338">[DOI]</a>.</p>
-        </div>
-      </details>
-        </div>
-      </details>
-    </article>
 
     <section class="interests band grid2">
       <h2 class="label-h">Research interests</h2>
@@ -373,14 +95,14 @@
 
       <div class="fig-row">
         <figure class="fig">
-          <div class="plate"><img loading="lazy" decoding="async" class="tall" src="images/sobue2024-cb2.webp" width="1200" height="1309" alt="Schematic: the CB2 agonist JWH133 stimulates microglia, which release BDNF to protect neurons and reduce C1q signalling to astrocytes, lowering astrocyte-driven neuronal damage in Alzheimer's model mice."></div>
+          <div class="plate"><img class="tall" src="images/sobue2024-cb2.webp" width="1200" height="1309" alt="Schematic: the CB2 agonist JWH133 stimulates microglia, which release BDNF to protect neurons and reduce C1q signalling to astrocytes, lowering astrocyte-driven neuronal damage in Alzheimer's model mice."></div>
           <figcaption><b>Treating glia, not neurons.</b> Stimulating the cannabinoid receptor CB2 on microglia dampened
             harmful astrocyte activation and improved memory in Alzheimer's model mice.
             <span class="credit">From <a href="https://doi.org/10.1038/s41419-024-07249-6">Sobue et al.,
             <em>Cell Death Dis</em> 2024</a>, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</span></figcaption>
         </figure>
         <figure class="fig">
-          <div class="plate"><img loading="lazy" decoding="async" src="images/ishida-jem-2022-graphical-abstract.jpg" width="760" height="520" alt="Graphical abstract: tau in the interstitial fluid is carried along blood vessels with cerebrospinal fluid via astrocytic AQP4 water channels toward the meninges and lymphatic vessels."></div>
+          <div class="plate"><img src="images/ishida-jem-2022-graphical-abstract.jpg" width="760" height="520" alt="Graphical abstract: tau in the interstitial fluid is carried along blood vessels with cerebrospinal fluid via astrocytic AQP4 water channels toward the meninges and lymphatic vessels."></div>
           <figcaption><b>Washing tau out.</b> Extracellular tau leaves the brain along the glymphatic route, which depends
             on the astrocyte water channel AQP4.
             <span class="credit">Graphical abstract from <a href="https://doi.org/10.1084/jem.20211275">Ishida et al.,
@@ -388,20 +110,382 @@
         </figure>
       </div>
 
+      <p class="note">The grants and publications listed under each placement belong to the host laboratories. I list them as
+        background to each theme; they are not my own awards or papers, and some appeared after my placement ended.</p>
       </div>
     </section>
 
+    <article class="theme c-tohoku" id="bone-marrow">
+      <header class="theme-head">
+        <p class="theme-meta"><span class="when">Sep 2026 – present</span>Tohoku University<br>Sendai, Japan</p>
+        <div class="theme-title">
+          <h2>Bone marrow, blood and the ageing brain</h2>
+          <p class="theme-topic"><strong>Haematopoietic stem cells and the origins of dementia</strong><br>
+        Laboratory of Pharmacology, Graduate School of Pharmaceutical Sciences. Supervisor: Assoc. Prof. Nariko Arimura</p>
+        </div>
+      </header>
+      <div class="pair">
+        <p class="label">In the host lab</p>
+        <div class="text"><p>We still don't know what first sets dementia in motion, and the
+            blood, both its cells and what they secrete, turns out to have a strong influence on the brain. Assoc. Prof.
+            Arimura's laboratory studies how changes in haematopoietic (blood-forming) stem cells affect brain function.
+            Almost everyone with Down syndrome develops early-onset Alzheimer's disease. The lab found that normal mice given
+            bone marrow from a Down syndrome model develop cognitive decline, even though their brains are genetically
+            normal. The team is now following the plasma metabolites and exosomes from these blood cells that reach the
+            brain, and testing how young bone marrow changes the ageing brain.</p></div>
+        <p class="label">My placement</p>
+        <div class="text"><p>I joined this project in September 2026 as an undergraduate research
+            assistant.</p></div>
+      </div>
+        <figure class="fig side">
+          <div class="plate"><img src="images/tohoku2025-tau-microtubule.webp" width="690" height="473" alt="Diagram: in a healthy brain tau stabilises microtubules; in the Alzheimer's brain tau detaches, forms tangles and the microtubules disintegrate, damaging neurons. A question mark marks the unknown trigger."></div>
+          <figcaption><b>The unknown trigger.</b> In Alzheimer's disease tau detaches from microtubules and forms tangles.
+            What starts this is the question the lab works back from.
+            <span class="credit">Image: Tohoku University (2025).</span></figcaption>
+        </figure>
+      <div class="pair">
+        <p class="label label-thought">Current thinking</p>
+        <div class="text thoughts"><p>In mid-2026, two studies reported that from around age 50, microglia in the human brain are gradually replaced by
+            cells made in the bone marrow, and that by about 80 almost all of them are
+            (<a href="https://www.alzforum.org/news/research-news/brain-ages-infiltrating-monocytes-replace-native-microglia">Alzforum, Aug 2026</a>).
+            Florent Ginhoux called the blood system "a previously underappreciated contributor" to microglial biology. If that
+            holds, the quality of what the marrow produces matters for the ageing brain. A month later, Michal Schwartz's group
+            showed that in amyloid mice, chronic type I interferon disrupts monocyte production in the marrow, and that
+            blocking it protected neurons
+            (<a href="https://www.alzforum.org/news/research-news/can-alzheimers-mess-bone-marrow-monocytes">Alzforum, Sep 2026</a>).
+            Taken together with the Arimura lab's Down syndrome result, this looks to me like a loop: the diseased brain may
+            reshape the marrow, and the marrow feeds back on the brain. Nathan Zemke calls it "an emerging concept rather than
+            an established paradigm", and most of the evidence still comes from mice. That is the part I want to help
+            test.</p></div>
+      </div>
+        <figure class="fig side">
+          <div class="plate"><img src="images/brain-bone-marrow-loop.svg" width="640" height="360" alt="Schematic: bone-marrow stem cells make monocytes that travel to the brain and become microglia-like cells; signals such as type I interferon from the diseased brain may travel back; the share of marrow-derived microglia rises from a few percent at age 50 to nearly all by 80."></div>
+          <figcaption><b>A loop between marrow and brain.</b> Blood-forming stem cells make monocytes that can settle in
+            the brain as microglia-like cells. Signals from the diseased brain may travel back and disturb this supply.
+            <span class="credit">Drawn for this site, based on Belk et al. and Zemke et al. (2026) and
+            <a href="https://doi.org/10.1038/s41593-026-02417-7">Abellanas et al., <em>Nat Neurosci</em> 2026</a>.</span></figcaption>
+        </figure>
+      <p class="label">Sources</p>
+      <details class="refs wide">
+        <summary>Host-lab funding and selected publications</summary>
+        <div class="refs-body">
+          <p><b>Host-lab funding</b> (PI: Assoc. Prof. Arimura):
+        JSPS KAKENHI Scientific Research (B) <a href="https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-24K01943/">24K01943</a>,
+        2024–2027, Elucidating the haematopoietic-stem-cell basis of dementia onset;
+        AMED Brain/MINDS 2.0 <a href="https://brainminds.jp/research/2141">5S-02</a>, FY2024–2026, Analysis of plasma
+        components that cause dementia and development of transplantation therapy.</p>
+          <p><b>Selected lab publications:</b>
+        Nakazawa S, … Arimura N. <em>Nihon Yakurigaku Zasshi</em> 2025 (review: blood cells and plasma components in dementia)
+        <a href="https://doi.org/10.1254/fpj.24115">[DOI]</a>;
+        Dewa K, Arimura N, … Hoshino M. <em>Nat Commun</em> 2024 (neuronal DSCAM and astrocytic GLAST in synapse formation)
+        <a href="https://doi.org/10.1038/s41467-023-44579-z">[DOI]</a>.</p>
+        </div>
+      </details>
+    </article>
+
+    <article class="theme c-shimane" id="organelle-contacts">
+      <header class="theme-head">
+        <p class="theme-meta"><span class="when">Jun – Aug 2026</span>Shimane University<br>Izumo, Japan</p>
+        <div class="theme-title">
+          <h2>ER–mitochondria contacts in neurodegeneration</h2>
+          <p class="theme-topic"><strong>Organelle-contact abnormalities in neurodegenerative disease</strong><br>
+        Department of Life Science (Chemistry), Faculty of Medicine. Supervisor: Assoc. Prof. Seiji Watanabe</p>
+        </div>
+      </header>
+      <div class="pair">
+        <p class="label">In the host lab</p>
+        <div class="text"><p>Protein build-up, failing mitochondria and inflammation are usually
+            studied separately. One place where they meet is the mitochondria-associated membrane (MAM), the contact site
+            between the endoplasmic reticulum and mitochondria. The MAM handles Ca<sup>2+</sup> transfer, lipid synthesis,
+            mitochondrial division, autophagy and responses to proteostatic stress. Assoc. Prof. Watanabe and colleagues have
+            shown that MAM disruption is common to several ALS-causing genes, and that losing the MAM impairs the
+            TBK1-mediated response to proteostatic stress. The lab now asks which parts of the MAM are damaged in disease,
+            whether microglia have MAM defects too, and whether restoring the MAM can reduce neuroinflammation.</p></div>
+        <p class="label">My placement</p>
+        <div class="text"><p>My project, <em>Investigation of novel organelle-contact abnormalities
+            using neurodegenerative disease models</em>, compared MAM formation, location and related proteins between
+            disease models and controls, using the lab's cell systems and stored samples, and related these changes to
+            mitochondrial shape, proteostatic stress and neuroinflammation.</p></div>
+      </div>
+        <figure class="fig side">
+          <div class="plate"><img class="tall" src="images/watanabe-bioessays-2025-fig1.jpg" width="602" height="696" alt="Schematic from Watanabe and Yamanaka 2025 comparing MAM deficit in ALS, healthy contacts, and MAM excess in Alzheimer's disease."></div>
+          <figcaption><b>Too little or too much contact.</b> The ER–mitochondria contact is weakened in ALS but
+            over-formed in Alzheimer's disease.
+            <span class="credit">Figure 1 from <a href="https://doi.org/10.1002/bies.70016">Watanabe &amp; Yamanaka,
+            <em>BioEssays</em> 2025</a>, reproduced unchanged under
+            <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>.</span></figcaption>
+        </figure>
+      <div class="pair">
+        <p class="label label-thought">Current thinking</p>
+        <div class="text thoughts"><p>In August 2026, researchers described "mitochondrial plaques": large clusters of mitochondria-filled dystrophic
+            neurites next to amyloid plaques, in mouse models and in Alzheimer's brain
+            (<a href="https://www.alzforum.org/news/research-news/meet-mitochondrial-plaque-new-alzheimers-pathology">Alzforum, Aug 2026</a>).
+            Ralph Nixon read them as one sign of a wider collapse of autophagy in vulnerable neurons. I keep coming at this
+            from the other side. The MAM is one of the places where mitochondria are divided, checked and handed over to
+            autophagy, so could failure at the contact site come before the pile-up? The idea is not new. TDP-43 was shown to
+            loosen the ER–mitochondria link back in 2014
+            (<a href="https://www.alzforum.org/news/research-news/no-mam-als-protein-breaks-mitochondria-endoplasmic-reticulum-bond">Alzforum, Jun 2014</a>),
+            but only now are there good tools to watch these contacts in tissue. I find it useful to ask not only which
+            organelle breaks, but where two organelles stop working together.</p></div>
+      </div>
+        <figure class="fig side">
+          <div class="plate dark"><img src="images/nagoya-sigma1r-atad3a-micrograph.webp" width="700" height="700" alt="Fluorescence micrograph of a cultured cell: sigma-1 receptor in green spread through the ER, ATAD3A in red on threadlike mitochondria, nucleus in blue."></div>
+          <figcaption><b>Seeing the contact.</b> The MAM protein σ1R (green) and the mitochondrial protein ATAD3A (red),
+            both linked to ALS. Loss of σ1R disturbs mitochondrial shape through ATAD3A.
+            <span class="credit">Image: Yamanaka Laboratory, Nagoya University, via
+            <a href="https://eurekalert.org/multimedia/983415">EurekAlert</a>. Study:
+            <a href="https://doi.org/10.1016/j.nbd.2023.106031">Watanabe et al., <em>Neurobiol Dis</em> 2023</a>.</span></figcaption>
+        </figure>
+      <p class="label">Sources</p>
+      <details class="refs wide">
+        <summary>Host-lab funding and selected publications</summary>
+        <div class="refs-body">
+          <p><b>Host-lab funding</b> (PI: Assoc. Prof. Watanabe):
+        JST FOREST Program (2024 cohort), New therapeutic strategies for neurodegenerative diseases from ER–mitochondria
+        crosstalk; JSPS KAKENHI Scientific Research (B)
+        <a href="https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-26K02327/">26K02327</a>, 2026–2031, Molecular basis of
+        neuroinflammation through organelle crosstalk and development of new control strategies. Foundation support
+        acknowledged in the lab's 2025 MAM review: Takeda Science Foundation, Mochida Memorial Foundation for Medical and
+        Pharmaceutical Research, Kowa Life Science Foundation, Novartis Foundation.</p>
+          <p><b>Selected lab publications:</b>
+        Watanabe S, … Yamanaka K. <em>PNAS</em> 2023 (MAM collapse impairs TBK1-mediated proteostatic stress response in ALS)
+        <a href="https://doi.org/10.1073/pnas.2315347120">[DOI]</a>;
+        Watanabe S, … Yamanaka K. <em>Neurobiol Dis</em> 2023 (σ1R and ATAD3A in mitochondrial morphology in ALS)
+        <a href="https://doi.org/10.1016/j.nbd.2023.106031">[DOI]</a>;
+        Watanabe S, Yamanaka K. <em>BioEssays</em> 2025 (review: ER–mitochondria contacts and proteostatic stress in
+        neurodegeneration) <a href="https://doi.org/10.1002/bies.70016">[DOI]</a>.</p>
+        </div>
+      </details>
+    </article>
+
+    <article class="theme c-tokyo" id="senoinflammation">
+      <header class="theme-head">
+        <p class="theme-meta"><span class="when">Jan – Feb 2026</span>Institute of Science Tokyo<br>Tokyo, Japan</p>
+        <div class="theme-title">
+          <h2>Ageing, senescent glia and inflammation</h2>
+          <p class="theme-topic"><strong>Ageing-induced senoinflammation in dementia</strong><br>
+        Department of Pharmacology, Graduate School of Medical and Dental Sciences. Supervisor: Prof. Tomoyuki Furuyashiki</p>
+        </div>
+      </header>
+      <div class="pair">
+        <p class="label">In the host lab</p>
+        <div class="text"><p>Age is the biggest risk factor for dementia. Part of the reason may
+            be senescent cells, which stop dividing but do not die, and keep releasing inflammatory signals
+            ("senoinflammation") into the tissue around them. Prof. Furuyashiki's laboratory studies how ageing and chronic
+            stress change brain circuits through inflammation in the brain and the rest of the body. The lab has shown that
+            long-term stress mobilises cells from the bone marrow into the brain, where they contribute to behavioural
+            change. This is the same body-to-brain route I now work on at Tohoku. More recently, the lab found that oxidative
+            stress in synaptic mitochondria of the prefrontal cortex helps explain why some aged mice lose cognitive
+            flexibility and others don't. The lab takes part in two Moonshot Goal 7 projects on preventing and controlling
+            dementia.</p></div>
+        <p class="label">My placement</p>
+        <div class="text"><p>I trained in the lab on this theme in January and February 2026.</p></div>
+      </div>
+        <figure class="fig side">
+          <div class="plate"><img src="images/furuyashiki-agingcell-2026-graphical-abstract.webp" width="331" height="224" alt="Graphical abstract: aged mice vary in cognitive flexibility; low performers have more synaptic mitochondrial proteins; MitoQ improves flexibility."></div>
+          <figcaption><b>Mitochondria at the ageing synapse.</b> Aged mice vary in cognitive flexibility. Poor performers
+            carry more synaptic mitochondrial proteins in the prefrontal cortex, and the antioxidant MitoQ improves
+            flexibility.
+            <span class="credit">Graphical abstract from <a href="https://doi.org/10.1111/acel.70716">Yamada et al.,
+            <em>Aging Cell</em> 2026</a>, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</span></figcaption>
+        </figure>
+      <div class="pair">
+        <p class="label label-thought">Current thinking</p>
+        <div class="text thoughts"><p>Senolytics, drugs that clear senescent cells, have been tried in small Alzheimer's studies. Dasatinib reached the
+            cerebrospinal fluid, but biomarkers and cognition did not change over 12 weeks; a larger placebo-controlled trial
+            is expected to run into 2027 (<a href="https://www.alzforum.org/therapeutics/dasatinib-quercetin">Alzforum
+            therapeutics database</a>). Meanwhile, Li Gan's group found that senescent microglia in a mouse model of ageing
+            release one factor, DLK1, that disrupts myelin and neuronal signalling
+            (<a href="https://www.alzforum.org/news/research-news/senescent-microglia-release-protein-disrupts-myelin-riles-neurons">Alzforum, Aug 2026</a>).
+            Rahul Nagvekar noted that myelin breakdown has long been linked to neurodegeneration but rarely targeted, and
+            this study names a candidate driver. It points to a different strategy: rather than removing senescent cells,
+            block the specific factors that do the damage. It also explains why the Moonshot project puts so much weight on
+            imaging senoinflammation. A drug target is only useful if we can see whether we are hitting it.</p></div>
+      </div>
+        <figure class="fig side">
+          <div class="plate"><img src="images/higuchi-moonshot-senoinflammation.webp" width="1000" height="756" alt="Cycle diagram: deposits of tau, TDP-43, α-synuclein and amyloid-β drive cellular senescence of glia, which leads to neuroinflammation as glia turn from protectors to destroyers, feeding back on protein aggregation."></div>
+          <figcaption><b>A vicious cycle.</b> Protein aggregates push glia into senescence; senescent glia drive
+            inflammation and turn from protectors into destroyers, which speeds up aggregation.
+            <span class="credit">Image: <a href="https://anc.qst.go.jp/moonshot-7/en/about/">Moonshot Goal 7 Higuchi
+            Project</a>, QST.</span></figcaption>
+        </figure>
+      <p class="label">Sources</p>
+      <details class="refs wide">
+        <summary>Host-lab funding and selected publications</summary>
+        <div class="refs-body">
+          <p><b>Host-lab projects:</b>
+        AMED Moonshot Goal 7, Higuchi Project (PM: Dr Makoto Higuchi, QST; Prof. Furuyashiki is a project member), Early
+        detection and control of dementia pathogenesis based on the concept of glial pathology developing into
+        senoinflammation; AMED Moonshot Goal 7, <a href="https://ms7isa.med.kyoto-u.ac.jp/member/%e5%8f%a4%e5%b1%8b%e6%95%b7-%e6%99%ba%e4%b9%8b/">Isa
+        Project</a> (Prof. Furuyashiki is a project member), Brain reserve functions that support resilience against
+        dementia, and ways to strengthen them; AMED Brain/MINDS 2.0 <a href="https://brainminds.jp/research/4561">3B-05-R7</a>,
+        FY2025–2029 (PI: Prof. Furuyashiki), Whole-brain neural-circuit changes originating from inflammation in psychiatric
+        and neurological disorders.</p>
+          <p><b>Selected lab publications:</b>
+        Yamada R, …, Furuyashiki T. <em>Aging Cell</em> 2026 (synaptic mitochondrial oxidative stress and age-related cognitive
+        inflexibility) <a href="https://doi.org/10.1111/acel.70716">[DOI]</a>;
+        Yamada R, …, Furuyashiki T. <em>J Pharmacol Sci</em> 2025 (ageing-associated behavioural changes in C57BL/6 substrains)
+        <a href="https://doi.org/10.1016/j.jphs.2025.01.002">[DOI]</a>;
+        Motooka Y, …, Furuyashiki T. <em>J Pharmacol Sci</em> 2025 (COX-1 and TLR4 in stress-induced neuroinflammation, PET)
+        <a href="https://doi.org/10.1016/j.jphs.2025.01.006">[DOI]</a>.</p>
+        </div>
+      </details>
+    </article>
+
+    <article class="theme c-tmu" id="mark4">
+      <header class="theme-head">
+        <p class="theme-meta"><span class="when">Dec 2025 – Jan 2026</span>Tokyo Metropolitan University<br>Tokyo, Japan</p>
+        <div class="theme-title">
+          <h2>MARK4 and early tau toxicity</h2>
+          <p class="theme-topic"><strong>The role of MARK4 in neuroinflammation</strong><br>
+        Laboratory of Molecular Neuroscience, Graduate School of Science. Supervisor: Prof. Kanae Ando</p>
+        </div>
+      </header>
+      <div class="pair">
+        <p class="label">In the host lab</p>
+        <div class="text"><p>Tau becomes toxic well before it forms tangles, and the enzymes that
+            modify it early are possible drug targets. Prof. Ando's laboratory studies MARK4, a kinase linked to Alzheimer's
+            disease by both genetics and pathology. The lab has shown that deleting <em>Mark4</em> in a tauopathy mouse
+            model reduces pathological tau, neurodegeneration and astrogliosis, and improves memory and survival. It has
+            also developed a cell-penetrating peptide that blocks MARK4 and reduces tau toxicity. Separately, the lab
+            studies how neuronal and glial metabolism shape brain ageing: in a fly model of tau toxicity, raising glucose
+            uptake in glia reduced neuroinflammation and protected neurons.</p></div>
+        <p class="label">My placement</p>
+        <div class="text"><p>I studied the role of MARK4 in neuroinflammation, supported by an
+            Undergraduate Research Scholarship from Tokyo Metropolitan University.</p></div>
+      </div>
+        <figure class="fig side">
+          <div class="plate"><img src="images/ando-febs-2026-graphical-abstract.webp" width="238" height="281" alt="Graphical abstract: oxidative stress plus excess MARK4 activity lowers TIA1 oxidation, increases stress-granule formation, and leads to tau accumulation and neurodegeneration."></div>
+          <figcaption><b>MARK4 under oxidative stress.</b> Excess MARK4 activity lowers TIA1 oxidation and increases
+            stress-granule formation, leading to tau accumulation and neurodegeneration.
+            <span class="credit">Graphical abstract from <a href="https://doi.org/10.1002/2211-5463.70338">Nakajima et al.,
+            <em>FEBS Open Bio</em> 2026</a>, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</span></figcaption>
+        </figure>
+      <div class="pair">
+        <p class="label label-thought">Current thinking</p>
+        <div class="text thoughts"><p>In 2025, Thomas Karikari's group characterised the soluble tau assemblies that form before tangles. Their core is
+          phosphorylated at serines 262 and 356, and these species in cerebrospinal fluid tracked tangle load and cognitive
+          decline (<a href="https://www.alzforum.org/news/research-news/new-biomarkers-catch-tau-it-tangles">Alzforum, Feb 2025</a>).
+          These are the sites that MARK-family kinases phosphorylate. The Ando lab's fly work complicates the picture,
+          though: MARK1, 2 and 4 all increased phosphorylation at these sites, but only MARK4 made tau accumulate, so the
+          sites alone do not explain toxicity. In 2016, blocking Nuak1, a related kinase that acts at Ser356, also reduced
+          tau pathology in mice, and Bingwei Lu suggested this kinase family as a new way into the tauopathies
+          (<a href="https://www.alzforum.org/news/research-news/new-target-tauopathies-blocking-nuak1-could-reduce-tau-build">Alzforum, Oct 2016</a>).
+          I would like to know whether the same early tau species could work both as an early warning and as a readout
+          for MARK4-targeted drugs.</p></div>
+      </div>
+      <p class="label">Sources</p>
+      <details class="refs wide">
+        <summary>Host-lab funding and selected publications</summary>
+        <div class="refs-body">
+          <p><b>Host-lab funding</b> (PI: Prof. Ando):
+        AMED Brain/MINDS 2.0 <a href="https://brainminds.jp/research/2149">5S-03</a>, FY2024–2026, Development of therapeutic
+        seeds for dementias with tau pathology; JSPS KAKENHI Scientific Research (B)
+        <a href="https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-24K02860/">24K02860</a>, 2024–2028, Molecular and circuit
+        basis by which neuronal glucose metabolism regulates organismal ageing; Takeda Science Foundation.</p>
+          <p><b>Selected lab publications:</b>
+        Sultanakhmetov G, … Ando K. <em>Brain Commun</em> 2024 (<em>Mark4</em> ablation attenuates tauopathy phenotypes)
+        <a href="https://doi.org/10.1093/braincomms/fcae136">[DOI]</a>;
+        Oba T, … Ando K. <em>Neurobiol Dis</em> 2023 (allosteric peptide inhibitor of MARK4)
+        <a href="https://doi.org/10.1016/j.nbd.2023.106334">[DOI]</a>;
+        Nakajima S, … Ando K. <em>FEBS Open Bio</em> 2026 (MARK4, stress granules and tau accumulation)
+        <a href="https://doi.org/10.1002/2211-5463.70338">[DOI]</a>.</p>
+        </div>
+      </details>
+    </article>
+
     <section class="thread">
       <div class="thread-inner grid2">
-        <h2 class="label-h">Questions across scales</h2>
+        <h2 class="label-h">How the four fit together</h2>
         <div class="content">
-          <p>These placements have shaped my interest in peripheral immunity, glial responses, organelle function and tau regulation. Each theme has its own evidence and open questions. I want to test specific connections between these processes and identify where an intervention could change the brain’s vulnerability to disease.</p>
+          <ol class="route" aria-label="From body to neuron">
+            <li class="c-tohoku"><span class="dot"></span><b>Bone marrow output</b><span>Tohoku</span></li>
+            <li class="c-tokyo"><span class="dot"></span><b>Senescent glia</b><span>Science Tokyo</span></li>
+            <li class="c-shimane"><span class="dot"></span><b>Organelle contacts</b><span>Shimane</span></li>
+            <li class="c-tmu"><span class="dot"></span><b>Early tau</b><span>Tokyo Metropolitan</span></li>
+          </ol>
+          <p>Read in order, the four placements trace one route from the body to the neuron. The bone marrow supplies the
+            brain's immune cells, and its output changes with age and disease. Those cells, and the brain's own glia, can slip
+            into a senescent, inflammatory state. Inside stressed neurons and glia, the contacts between organelles that keep
+            mitochondria and proteostasis in balance start to fail. And at the end of that chain sits tau, modified by kinases
+            such as MARK4 into the species that damage synapses. I do not think any one of these steps is "the cause" of
+            dementia. What interests me is the order in which they fall, and which of them a medicine could still hold up.</p>
         </div>
       </div>
     </section>
   </main>
 
-  <footer><div class="wrapper"><div class="footer-top"><div><h2>Keep the conversation going.</h2><p>For conversations about dementia, neuroinflammation<br>and pharmaceutical science.</p></div><div class="footer-links"><a href="https://www.linkedin.com/in/ziyaoqing8964/">LinkedIn ↗</a><a href="https://www.researchgate.net/profile/Ziyao-Qing">ResearchGate ↗</a><a href="https://github.com/ziyaoqing">GitHub ↗</a></div></div><div class="footer-bottom"><span>© 2026 Ziyao Qing</span><span>Melbourne, Australia / Updated October 2026</span></div></div></footer>
+  <footer>
+    <div class="wrapper">
+      <div class="foot">
+        <span>&copy; 2026 Ziyao Qing, Melbourne &middot; Updated October 2026</span>
+        <span class="links">
+          <a href="https://www.linkedin.com/in/ziyaoqing8964/">LinkedIn</a>
+          <a href="https://www.researchgate.net/profile/Ziyao-Qing">ResearchGate</a>
+        </span>
+      </div>
+      <p class="credit">Figures on this page are credited in their captions. Micrograph in the header: <a href="https://commons.wikimedia.org/wiki/File:Microglia_and_neurons.jpg">&ldquo;Microglia and neurons&rdquo;</a> by GerryShaw / EnCor Biotechnology Inc., <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.</p>
+    </div>
+  </footer>
 
+  <script>
+  (function () {
+    var c = document.getElementById('glia'); if (!c || !c.getContext) return;
+    var ctx = c.getContext('2d'), W = c.width, H = c.height, cx = W / 2, cy = H / 2;
+    var seed = 20263; function rnd() { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; }
+    // Build the cell as a tree of nodes so whole processes can sway from their base.
+    var nodes = [{ x: cx, y: cy, parent: -1, depth: 0, w: 5.5, tip: false }];
+    function grow(pi, ang, len, w, depth) {
+      var n = 2 + Math.floor(rnd() * 2), cur = pi;
+      for (var i = 0; i < n; i++) {
+        var a = ang + (rnd() - .5) * .5, l = len / n * (0.8 + rnd() * .5);
+        var p = nodes[cur]; nodes.push({ x: p.x + Math.cos(a) * l, y: p.y + Math.sin(a) * l, parent: cur, depth: depth, w: w, ang: a, len: l, tip: false });
+        cur = nodes.length - 1; ang = a;
+        if (depth < 4 && rnd() < .5) grow(cur, ang + (rnd() < .5 ? -1 : 1) * (.55 + rnd() * .8), len * .6, w * .66, depth + 1);
+      }
+      if (depth < 4) grow(cur, ang + (rnd() - .5) * 1.1, len * .6, w * .66, depth + 1); else nodes[cur].tip = true;
+    }
+    var arms = 5; for (var k = 0; k < arms; k++) grow(0, k * Math.PI * 2 / arms + rnd() * .5, 155 + rnd() * 70, 5.5, 0);
+    var N = nodes.length, phase = new Float32Array(N), amp = new Float32Array(N);
+    for (var i = 1; i < N; i++) { phase[i] = rnd() * Math.PI * 2; amp[i] = 0.006 + nodes[i].depth * 0.006; }
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var px = null, py = null, pt = 0;                      // pointer (an "injury" the cell leans toward)
+    c.addEventListener('pointermove', function (e) { var b = c.getBoundingClientRect(); px = (e.clientX - b.left) * W / b.width; py = (e.clientY - b.top) * H / b.height; pt = performance.now(); });
+    c.addEventListener('pointerleave', function () { px = null; });
+    var X = new Float32Array(N), Y = new Float32Array(N), t0 = null, grown = 0, visible = false, last = 0;
+    function layout(t) {
+      X[0] = cx; Y[0] = cy;
+      var lean = (px !== null) ? Math.max(0, 1 - (performance.now() - pt) / 4000) : 0;
+      for (var i = 1; i < N; i++) {
+        var n = nodes[i], p = n.parent;
+        var sway = Math.sin(t * 0.0006 + phase[i]) * amp[i];      // slow surveillance
+        var a = n.ang + sway;
+        if (lean > 0) { var dx = px - X[p], dy = py - Y[p], da = Math.atan2(dy, dx) - a; da = Math.atan2(Math.sin(da), Math.cos(da)); a += da * 0.05 * lean * (n.depth + 1) / 5; }
+        var stretch = n.tip ? 1 + 0.08 * Math.sin(t * 0.0009 + phase[i]) : 1;   // tips probe out and back
+        X[i] = X[p] + Math.cos(a) * n.len * stretch; Y[i] = Y[p] + Math.sin(a) * n.len * stretch;
+      }
+    }
+    function draw(upto) {
+      ctx.clearRect(0, 0, W, H); ctx.lineCap = 'round';
+      for (var i = 1; i < upto; i++) {
+        var n = nodes[i], p = n.parent;
+        ctx.strokeStyle = 'rgba(44,106,67,' + (0.95 - n.depth * .15) + ')'; ctx.lineWidth = Math.max(1.3, n.w);
+        ctx.beginPath(); ctx.moveTo(X[p], Y[p]); ctx.lineTo(X[i], Y[i]); ctx.stroke();
+      }
+      ctx.fillStyle = '#2c6a43'; ctx.beginPath(); ctx.ellipse(cx, cy, 14, 11, .4, 0, Math.PI * 2); ctx.fill();
+      ctx.fillStyle = 'rgba(163,50,74,.9)'; ctx.beginPath(); ctx.arc(cx + 2, cy - 1, 4.5, 0, Math.PI * 2); ctx.fill();
+    }
+    function frame(ts) {
+      if (t0 === null) t0 = ts;
+      var p = reduce ? 1 : Math.min(1, (ts - t0) / 2600);
+      grown = Math.floor(N * p);
+      if (reduce) { layout(0); draw(N); return; }
+      if (ts - last > 40) { layout(ts); draw(Math.max(grown, 1)); last = ts; }   // ~25 fps is plenty for this
+      if (visible) requestAnimationFrame(frame);
+    }
+    function onVis(e) { var v = e[0].isIntersecting; if (v && !visible) { visible = true; requestAnimationFrame(frame); } else if (!v) visible = false; }
+    if ('IntersectionObserver' in window) new IntersectionObserver(onVis).observe(c); else { visible = true; requestAnimationFrame(frame); }
+  })();
+  </script>
 </body>
 </html>
