@@ -33,3 +33,9 @@ The home-page micrograph is [“Microglia and neurons”](https://commons.wikime
 ## October 2026 restoration
 
 Restored Pages publishing from `main` / root; redesigned the home introduction; simplified the shared colour palette; refined mobile spacing and print pagination; clarified research questions and publication empty states; fixed nested-path 404 assets; added a sitemap and robots file.
+
+## Scientific editorial redesign
+
+The shared design uses Manrope headings, Source Sans 3 reading text, IBM Plex Mono annotations, charcoal and off-white surfaces, and a restrained lime accent. The homepage introduces the researcher and uses readable placement rows. Research experience precedes optional host-laboratory background; all figure credits remain adjacent to their figures. CV includes a print/save-as-PDF action and A4 print styles.
+
+The microscope photograph is a credited reference image, not the author’s experimental data. The ZQ favicon (`images/zq-mark.svg`) is original vector artwork. Stylesheets use a content version in their URL so new HTML cannot reuse outdated styles.
