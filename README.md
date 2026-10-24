@@ -1,30 +1,35 @@
-# Ziyao Qing – personal website
+# Ziyao Qing — personal research website
 
-Live at **https://ziyaoqing.github.io/**
+Live site: https://ziyaoqing.github.io/
 
-Plain static HTML/CSS site for GitHub Pages (no build step).
+A responsive, static academic website. No framework, package installation, JavaScript build, or external hosting is required.
 
-| File | Page |
-|---|---|
-| `index.html` | Home / About |
-| `research.html` | Research experience |
-| `publications.html` | Publications |
-| `cv.html` | CV |
-| `style.css` | Shared styles |
-| `images/avatar.jpg` | Header image (128 px) – cropped from [“Microglia and neurons”](https://commons.wikimedia.org/wiki/File:Microglia_and_neurons.jpg) by GerryShaw / EnCor Biotechnology Inc., [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). Keep the credit line in each page footer if you keep this image. |
-| `images/favicon.png` | Browser-tab icon (same image, 64 px) |
+## Pages
 
-## Deploy to GitHub Pages
+| File | Purpose |
+| --- | --- |
+| `index.html` | Introduction, research experience, milestones and contact |
+| `research.html` | Placements, interests and host-laboratory context |
+| `publications.html` | Publications, presentations and planned meetings |
+| `cv.html` | Curriculum vitae, with print styles |
+| `404.html` | Error page with root-relative navigation and assets |
+| `style.css` | Shared layout, responsive styles and print styles |
+| `robots.txt`, `sitemap.xml` | Search-engine discovery |
 
-1. On GitHub, create a **public** repository named exactly `<your-username>.github.io`.
-2. Upload all files in this folder (Add file → Upload files), or:
-   ```
-   git init
-   git add .
-   git commit -m "Initial site"
-   git branch -M main
-   git remote add origin https://github.com/<your-username>/<your-username>.github.io.git
-   git push -u origin main
-   ```
-3. Repo → Settings → Pages → Source: *Deploy from a branch*, Branch: `main` / `(root)`.
-4. After ~1 minute the site is live at `https://<your-username>.github.io/`.
+## Publishing and recovery
+
+GitHub repository **Settings → Pages** must use **Deploy from a branch**, branch **main**, folder **/ (root)**. A push to `main` publishes automatically. Keep `.nojekyll` in the root.
+
+If the entire site returns GitHub’s 404, first check that the selected branch has not become **None**, then check **Actions → pages build and deployment**. A successful historical deployment does not mean Pages is still enabled. Verify the live URL after deployment, including `research.html`, `publications.html` and `cv.html`.
+
+Preview locally with `python -m http.server 8000` and open http://localhost:8000. For a printable CV, open `cv.html` and use the browser’s Print / Save as PDF option.
+
+## Content and image credits
+
+Update placement dates, affiliations and milestones in both the home page and CV when they change. Keep planned attendance distinct from presentations, and host-lab funding and papers distinct from personal awards and publications. Conceptual research questions should not be presented as established findings.
+
+The home-page micrograph is [“Microglia and neurons”](https://commons.wikimedia.org/wiki/File:Microglia_and_neurons.jpg) by GerryShaw / EnCor Biotechnology Inc., [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). It is cropped for display. Retain its attribution. Other research figures have source and licence information beside them; preserve those credits. `brain-bone-marrow-loop.svg` is a conceptual research framework, not a quantitative result.
+
+## October 2026 restoration
+
+Restored Pages publishing from `main` / root; redesigned the home introduction; simplified the shared colour palette; refined mobile spacing and print pagination; clarified research questions and publication empty states; fixed nested-path 404 assets; added a sitemap and robots file.

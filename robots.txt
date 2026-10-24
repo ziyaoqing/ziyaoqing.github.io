@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ziyaoqing.github.io/sitemap.xml
