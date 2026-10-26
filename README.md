@@ -11,8 +11,8 @@ Plain static HTML/CSS site for GitHub Pages (no build step).
 | `publications.html` | Publications |
 | `cv.html` | CV |
 | `style.css` | Shared styles |
-| `images/avatar.jpg` | Header image (128 px) – cropped from [“Microglia and neurons”](https://commons.wikimedia.org/wiki/File:Microglia_and_neurons.jpg) by GerryShaw / EnCor Biotechnology Inc., [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). Keep the credit line in each page footer if you keep this image. |
-| `images/favicon.png` | Browser-tab icon (same image, 64 px) |
+| `images/art/` | Ink illustrations (home hero, page banners, chapter openers, tiles). Generated with NovelAI from original prompts and toned to the site palette by `duotone` processing; they are artistic impressions, not experimental data. The untouched originals are on the `art-src` branch. |
+| `images/microglia-glyph.svg`, `images/favicon.png` | Site mark and browser-tab icon (a drawn microglia) |
 
 ## Deploy to GitHub Pages
 
