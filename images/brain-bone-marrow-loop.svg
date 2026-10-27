@@ -6,35 +6,35 @@
       <path d="M0,0 L10,5 L0,10 z" fill="#2b2117"/>
     </marker>
     <marker id="am" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M0,0 L10,5 L0,10 z" fill="#a3324a"/>
+      <path d="M0,0 L10,5 L0,10 z" fill="#933e4a"/>
     </marker>
     <symbol id="glia" viewBox="-14 -14 28 28">
-      <g stroke="#2c6a43" stroke-width="2.2" stroke-linecap="round" fill="none">
+      <g stroke="#3c6245" stroke-width="2.2" stroke-linecap="round" fill="none">
         <path d="M0,0 L9,-7 M9,-7 L12,-11 M9,-7 L13,-4"/>
         <path d="M0,0 L-8,-8 M-8,-8 L-12,-9"/>
         <path d="M0,0 L-9,6 M-9,6 L-12,11 M-9,6 L-13,3"/>
         <path d="M0,0 L7,9 M7,9 L11,12"/>
       </g>
-      <circle r="4.2" fill="#2c6a43"/>
+      <circle r="4.2" fill="#3c6245"/>
     </symbol>
   </defs>
 
   <rect y="64" width="640" height="360" fill="#ffffff"/>
 
   <!-- bone marrow -->
-  <rect x="24" y="96" width="180" height="170" rx="26" fill="#f2e2da" stroke="#dcb1b2" stroke-width="1.5"/>
+  <rect x="24" y="96" width="180" height="170" rx="26" fill="#f1e3da" stroke="#d7b5b2" stroke-width="1.5"/>
   <text x="114" y="128" text-anchor="middle" font-size="21" font-weight="600" fill="#2b2117">Bone marrow</text>
   <text x="114" y="150" text-anchor="middle" font-size="16.5" fill="#6f604d">skull, long bones</text>
-  <g fill="#ffffff" stroke="#a3324a" stroke-width="1.8">
+  <g fill="#ffffff" stroke="#933e4a" stroke-width="1.8">
     <circle cx="74" cy="190" r="13"/>
     <circle cx="112" cy="206" r="13"/>
     <circle cx="150" cy="186" r="13"/>
   </g>
-  <g fill="#a3324a"><circle cx="74" cy="190" r="4"/><circle cx="112" cy="206" r="4"/><circle cx="150" cy="186" r="4"/></g>
+  <g fill="#933e4a"><circle cx="74" cy="190" r="4"/><circle cx="112" cy="206" r="4"/><circle cx="150" cy="186" r="4"/></g>
   <text x="114" y="248" text-anchor="middle" font-size="16.5" fill="#6f604d">stem cells</text>
 
   <!-- brain -->
-  <path d="M470,96 C420,96 396,128 404,160 C380,172 382,214 410,226 C410,256 448,272 476,262 C500,280 548,276 560,250 C596,248 616,214 600,186 C620,160 600,120 568,118 C552,92 500,84 470,96 Z" fill="#e6e7d9" stroke="#a8bda7" stroke-width="1.5"/>
+  <path d="M470,96 C420,96 396,128 404,160 C380,172 382,214 410,226 C410,256 448,272 476,262 C500,280 548,276 560,250 C596,248 616,214 600,186 C620,160 600,120 568,118 C552,92 500,84 470,96 Z" fill="#e8e6da" stroke="#afbaa8" stroke-width="1.5"/>
   <text x="506" y="128" text-anchor="middle" font-size="21" font-weight="600" fill="#2b2117">Brain</text>
   <use href="#glia" x="446" y="160" width="30" height="30"/>
   <use href="#glia" x="500" y="178" width="30" height="30"/>
@@ -45,21 +45,21 @@
 
   <!-- forward arrow: monocytes -->
   <path d="M212,160 C270,128 330,128 392,150" fill="none" stroke="#2b2117" stroke-width="2" marker-end="url(#ah)"/>
-  <g fill="#ffffff" stroke="#2c6a43" stroke-width="1.8"><circle cx="268" cy="138" r="7"/><circle cx="300" cy="132" r="7"/><circle cx="332" cy="134" r="7"/></g>
+  <g fill="#ffffff" stroke="#3c6245" stroke-width="1.8"><circle cx="268" cy="138" r="7"/><circle cx="300" cy="132" r="7"/><circle cx="332" cy="134" r="7"/></g>
   <text x="300" y="110" text-anchor="middle" font-size="18" fill="#2b2117">monocytes travel</text>
   <text x="300" y="90" text-anchor="middle" font-size="18" fill="#2b2117">in the blood</text>
 
   <!-- return arrow: signals -->
-  <path d="M400,236 C340,268 280,268 214,236" fill="none" stroke="#a3324a" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#am)"/>
-  <text x="306" y="288" text-anchor="middle" font-size="18" fill="#a3324a">signals from the diseased brain,</text>
-  <text x="306" y="310" text-anchor="middle" font-size="18" fill="#a3324a">e.g. type I interferon?</text>
+  <path d="M400,236 C340,268 280,268 214,236" fill="none" stroke="#933e4a" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#am)"/>
+  <text x="306" y="288" text-anchor="middle" font-size="18" fill="#933e4a">signals from the diseased brain,</text>
+  <text x="306" y="310" text-anchor="middle" font-size="18" fill="#933e4a">e.g. type I interferon?</text>
 
   <!-- age bar -->
   <text x="320" y="350" text-anchor="middle" font-size="18" fill="#2b2117">Share of microglia made in the bone marrow</text>
   <defs>
     <linearGradient id="g" x1="0" x2="1">
-      <stop offset="0" stop-color="#e2e4d6"/>
-      <stop offset="1" stop-color="#2c6a43"/>
+      <stop offset="0" stop-color="#e4e3d6"/>
+      <stop offset="1" stop-color="#3c6245"/>
     </linearGradient>
   </defs>
   <rect x="120" y="366" width="400" height="16" rx="8" fill="url(#g)"/>
